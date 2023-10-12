@@ -1,0 +1,62 @@
+<%# contact.ejs - Zakhar Hamarnyk - 301250102 - 11/10/23 %>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="style.css" />
+	
+	<title>Contact page</title>
+</head>
+
+<%- include('partials/nav'); %>
+
+<main>
+	<h1>How to contact me?</h1>
+	<section class="list">
+		<ul>
+			<li>
+				<a href="mailto:zhamarnyk9@gmail.com">
+					zhamarny@MY.CENTENNIALCOLLEGE.CA
+				</a>
+			</li>
+			<li>
+				<a href="https://www.linkedin.com/in/hamarnyk-zakhar-45831a262/">
+					LINKEDIN
+				</a>
+			</li>
+			<li>
+				(437)-424-7813
+			</li>
+		</ul>
+	</section>
+
+	<h1>Or contact me by this form:</h1>
+	<form action="/">
+		<div class="question">
+			<label for="subject">Your name:</label>
+			<input type="text" id="name" name="name" placeholder="First and Last name" required/>
+		</div>
+
+		<div class="question">
+			<label for="subject">Your contact information:</label>
+			<input type="text" id="contacts" name="contacts" placeholder="e.g. phone or email" required/>
+		</div>
+
+		<div class="question">
+			<label for="subject">Write your message here:</label>
+			<input type="text" id="subject" name="message" placeholder="I want to.." required/>
+		</div>
+
+		<div class="submission">
+			<input type="reset" value="Clear all" />
+			<input type="submit" value="Submit" />
+		</div>
+	</form>
+</main>
+
+<%- include('partials/footer'); %>
+
+</body>
+</html>  
